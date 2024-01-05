@@ -15,7 +15,7 @@ variance_value = sum_squared_diff / numel(data);
 
 % Calculate the third moment
 sum_cubed_diff = sum((data - mean_value).^3);
-third_moment = sum_cubed_diff / numel(data);
+third_moment = sum_cubed_diff / numel(data);+++++
 
 % Display the results
 fprintf('Mean: %.2f\n', mean_value);
