@@ -1,0 +1,12 @@
+% Parameters for the time and amplitude
+t = linspace(0, 2, 500); % Time array from 0 to 2 with 500 points
+A_mean = -5;
+A_variance = 25;
+A_std = sqrt(A_variance);
+
+% Generate random amplitudes A from the normal distribution
+X = A_mean + A_std * randn(size(t));
+
+
+% Save the data to a .mat file
+save('W_t_data.mat', "X", 't');
